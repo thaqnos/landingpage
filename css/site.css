@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: url("imagens/fundo-topo.jpg");
+    text-align: center;
+    padding: 10px 0; /*setado topo e bottom*/
+}
+
+header h1{
+    height: 84px;
+}
+
+nav{
+    padding: 15px 0; /*setado topo e bottom*/
+    text-align: center; 
+}
+
+nav li {
+    display: inline; /*mudar seu comportamento de bloco para linha*/
+    background-repeat: no-repeat;
+    background-image: url('imagens/patinha-preta.png');
+    background-position: right center; /*centralizar a imagem da patinha à direita*/
+    font-size: 18px;
+    padding-right: 27px;
+    margin-right: 10px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover{ /*pseudo-seletor (passar mouse em cima)*/
+    color: #6DD432;
+}
+
+/*#ids*/
+
+nav li#itemContato{
+    background-image: none; /*remover patinha do último item*/
+    padding-right: 0;
+    margin-right: 0;
+}
+
+#contato .flex-conteiner,
+#produto .flex-conteiner {
+    margin-top: 43px;
+}
+
+/*classes*/
+.fundo-verde{
+    background-color: #BDFF9C;
+}
+
+.conteiner{ /*Conteiner que centraliza o layout*/
+    width: 900px;
+    margin: 0 auto;
+    padding: 56px 0; 
+}
+
+.flex-conteiner{
+    display: flex; /*display flexivel*/
+    justify-content: space-between; /*espaça igualmente horizontalmente*/
+    flex-wrap: wrap;
+}
+
+.conteiner-float{ /*Container para os elementos flutuantes (clear automático)*/
+    display: table;
+}
+
+.conteiner-100{
+    width: 100%;
+}
+
+.flex-conteiner .col{ /*Container coluna flutuante + container que traz os elementos um ao lado do outro*/
+    width: 430px;
+}
+
+.produto{
+    width: 235px;
+}
+
+.produto figure{
+    border: 1px solid #c4c4c4;
+    background-color: white;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+}
+
+.produto figure img{
+    vertical-align: middle; /*alinha itens no centro*/
+}
+
+.texto-centralizado{
+    text-align: center;
+}
+
+form{
+    width: 380px;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    border: 1px solid #6DD432;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif; 
+}
+
+iframe{
+    width: 100%;    
+}
+
+.btn-pata{
+    border: 1px solid #91E467;
+    border-radius: 3px; /*top-left, top-right, bottom-left, bottom-right*/
+    background-color: #D2FBBD;
+    cursor: pointer; /*mudar cursor*/
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid #6DD432;
+    font-size: 12px;
+    padding: 20px 0;
+}
